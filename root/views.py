@@ -3,10 +3,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse('<h2>hello nigga<h2>')
+    return render(request,'root/index.html')
 
-def contactus(request):
-    return HttpResponse('<h2>you wanna find me nigga ?<h2>')
+def contact(request):
+    return render(request,'root/contact.html')
 
-def aboutus(request):
-    return HttpResponse('im the nigger king !')
+def about(request):
+    return render(request,'root/about.html')
+
